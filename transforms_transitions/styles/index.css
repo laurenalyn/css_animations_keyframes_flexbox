@@ -70,7 +70,9 @@ p:hover {
 
 /* ================================== */
 /* TRANSITION-DURATION  && 
-   TRANSITION-PROPERTY */
+   TRANSITION-PROPERTY  &&
+   TRANSITION-DELAY &&
+   TRANSITION-TIMING-FUNCTION*/
 /* ================================== */
 
 .box {
@@ -84,14 +86,20 @@ p:hover {
     border-radius: 20px;
 }
 
-.animated {
+/* .animated {
     transition-property: background-color, border-radius;
-    transition-duration: 5s, 1s;
-}
+    transition-duration: 3s, 1s;
+    transition-delay: 5s, 2s;
+}  */
 
 .box:hover {
-    background: #e74c3c;
-    transform-origin: top left;
-    transform: scale(2);
-    border-radius: 50px;
+   transform: translateX(300px);
+   border-radius: 50px;
+   background-color: blue;
+}
+
+.animated{
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
 }
