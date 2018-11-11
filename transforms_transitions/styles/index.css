@@ -38,10 +38,10 @@ p:hover {
 .transformed {
     background-color: #3498db;
     transform:scale(2);
-    /* transform:scaleX(4); */
-    /* transform:scaleY(5); */
-    /* transform:scale(3,5); */
-    /* transform-origin:0 0; sets the starting coordinates   (same as left top) 
+    transform:scaleX(4); 
+    transform:scaleY(5); 
+    transform:scale(3,5); 
+    transform-origin:0 0; sets the starting coordinates   (same as left top) 
 } */
 
 
@@ -49,7 +49,7 @@ p:hover {
 /* ================================== */
 /* TRANSFORM: SCALE */
 /* ================================== */
-p {
+/* p {
     width: 50px;
     height: 50px;
     background-color: #e74c3c;
@@ -58,12 +58,39 @@ p {
 }
 
 .transformed {
-    /* starting origin is the center point */
-    background-color: #9b59b6;
-    /* to use multiple transform effects, you have to write them in the same statement, 
+    /* starting origin is the center point 
+    /* background-color: #9b59b6;
+     to use multiple transform effects, you have to write them in the same statement, 
     otherwise the first will be canceled out by the second */
-    transform: rotate(45deg);
-               /* scale(0.5); */
+    /* transform: rotate(45deg); 
+               /* scale(0.5); 
     /* sticks a 'pin' and is the pivot point */
-    transform-origin: center;
+    /* transform-origin: center; 
+ } */
+
+/* ================================== */
+/* TRANSITION-DURATION */
+/* ================================== */
+
+.box {
+    background: #9b59b6;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    border-radius: 20px;
+}
+
+.animated {
+    transition-property: background-color, border-radius;
+    transition-duration: 5s, 1s;
+}
+
+.box:hover {
+    background: #e74c3c;
+    transform-origin: top left;
+    transform: scale(2);
+    border-radius: 50px;
 }
