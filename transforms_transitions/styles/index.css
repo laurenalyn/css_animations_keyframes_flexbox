@@ -21,11 +21,13 @@ p:hover {
     transform: translate(20px, 20px);
 } */
 
+
+
 /* ================================== */
 /* TRANSFORM: SCALE */
 /* ================================== */
 
-p {
+/* p {
     background-color: #1abc9c;
     color: #ecf0f1;
     border: 2px solid #2c3e50;
@@ -39,6 +41,29 @@ p {
     /* transform:scaleX(4); */
     /* transform:scaleY(5); */
     /* transform:scale(3,5); */
-    transform-origin:0 0; /* sets the starting coordinates   (same as left top) */
+    /* transform-origin:0 0; sets the starting coordinates   (same as left top) 
+} */
 
+
+
+/* ================================== */
+/* TRANSFORM: SCALE */
+/* ================================== */
+p {
+    width: 50px;
+    height: 50px;
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    border: 2px solid #2c3e50;
+}
+
+.transformed {
+    /* starting origin is the center point */
+    background-color: #9b59b6;
+    /* to use multiple transform effects, you have to write them in the same statement, 
+    otherwise the first will be canceled out by the second */
+    transform: rotate(45deg);
+               /* scale(0.5); */
+    /* sticks a 'pin' and is the pivot point */
+    transform-origin: center;
 }
