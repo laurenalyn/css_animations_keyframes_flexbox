@@ -117,3 +117,10 @@ p:hover {
     transition-timing-function: ease-in-out;
     transition-delay: 1s; */
 }
+
+/* What SHOULD be transitioned  */
+
+/* transform: translate ();
+transform: scale();
+transform: rotate;
+opacity */
