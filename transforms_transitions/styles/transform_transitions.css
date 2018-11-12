@@ -94,12 +94,26 @@ p:hover {
 
 .box:hover {
    transform: translateX(300px);
-   border-radius: 50px;
-   background-color: blue;
+   /* border-radius: 50px; */
+   background-color: darkslateblue;
 }
 
-.animated{
+/* .animated{
     transition-property: transform;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+} */
+
+ /* ================================== */
+ /* Shorthand Transitions
+ transition: property duration timing-function delay
+/* ================================== */
+
+.animated{
+    transition: transform 2s ease-out 1s, background 2s linear .7s;
+    /* transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s; */
 }
