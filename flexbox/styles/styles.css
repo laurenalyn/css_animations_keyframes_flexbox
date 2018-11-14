@@ -8,7 +8,7 @@
   font-family: lato;
   font-weight: 300;
   box-sizing: border-box;
-  width: 240px;
+  width: 100px;
 }
 
 .box-1 {
@@ -54,9 +54,9 @@ FLEX ITEMS*/
 .container {
     display: flex;
     border: 10px solid black;
-    height: 100vh;
-    flex-direction: row; /*default 
-    /*flex-direction: row-reverse;  /*reverses the order of rows  */
+    /* height: 100vh; */
+    flex-direction: row; /*default */
+    /*flex-direction: row-reverse;  reverses the order of rows 
     /* flex-direction: column; puts items into a column instead of a row 
     /* flex-direction: column-reverse; reverses the order of the column */
 
@@ -65,5 +65,12 @@ FLEX ITEMS*/
     /* flex-wrap: nowrap  /*default */
     flex-wrap: wrap;
     /*flex-wrap: wrap-reverse /*reverses the start/end of cross axis*/;
+
+    /* justify-content : defines how space is distributed between itmes 
+    in a flex container along the main axis */
+    justify-content: flex-end; /*doesnt change the order - but shifts everything to the end (right) */
+    /*justify-content: center; /*centers items within the container*/
+    /*justify-content: space-between; /*distributes space evenly between items*/
+    /*justify-content: space-around; /*distributes space evenly around items*/
 }
 
