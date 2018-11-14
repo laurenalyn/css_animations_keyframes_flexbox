@@ -8,6 +8,7 @@
   font-family: lato;
   font-weight: 300;
   box-sizing: border-box;
+  width: 240px;
 }
 
 .box-1 {
@@ -53,8 +54,16 @@ FLEX ITEMS*/
 .container {
     display: flex;
     border: 10px solid black;
+    height: 100vh;
     flex-direction: row; /*default 
-    /* flex-direction: row-reverse;  /*reverses the order of rows  */
-    /* flex-direction: column; /*puts items into a column instead of a row  */
+    /*flex-direction: row-reverse;  /*reverses the order of rows  */
+    /* flex-direction: column; puts items into a column instead of a row 
     /* flex-direction: column-reverse; reverses the order of the column */
+
+    /* flex-wrap specifies whether items are forced into a 
+    single line OR can be wrapped into multiple lines */
+    /* flex-wrap: nowrap  /*default */
+    flex-wrap: wrap;
+    /*flex-wrap: wrap-reverse /*reverses the start/end of cross axis*/;
 }
+
