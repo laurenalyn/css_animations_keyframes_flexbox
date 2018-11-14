@@ -46,4 +46,15 @@
   background: #aa00ff;
 }
 
-
+/* layout styles */
+/* we have to give the entire container the display:flex property 
+this way it can become a FLEX container  the items inside the conatiner become
+FLEX ITEMS*/
+.container {
+    display: flex;
+    border: 10px solid black;
+    flex-direction: row; /*default 
+    /* flex-direction: row-reverse;  /*reverses the order of rows  */
+    /* flex-direction: column; /*puts items into a column instead of a row  */
+    /* flex-direction: column-reverse; reverses the order of the column */
+}
