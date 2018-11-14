@@ -17,6 +17,7 @@
 
 .box-2 {
   background: #fa6800;
+  font-size: 150px;
 }
 
 .box-3 {
@@ -25,10 +26,12 @@
 
 .box-4 {
   background: #e3c800;
+  font-size: 50px;
 }
 
 .box-5 {
   background: #a4c400;
+  font-size: 80px;
 }
 
 .box-6 {
@@ -41,6 +44,7 @@
 
 .box-8 {
   background: #1ba1e2;
+  font-size: 125px;
 }
 
 .box-9 {
@@ -48,14 +52,23 @@
 }
 
 /* layout styles */
-/* we have to give the entire container the display:flex property 
-this way it can become a FLEX container  the items inside the conatiner become
-FLEX ITEMS*/
 .container {
     display: flex;
     border: 10px solid black;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* align-items: baseline;  aligns based on the baseline of the text(font) */
+}
+
+/* we have to give the entire container the display:flex property 
+this way it can become a FLEX container  the items inside the conatiner become
+FLEX ITEMS*/
+/* .container {
+    display: flex;
+    border: 10px solid black;
     /* height: 100vh; */
-    flex-direction: row; /*default */
+    /* flex-direction: row; default */
     /*flex-direction: row-reverse;  reverses the order of rows 
     /* flex-direction: column; puts items into a column instead of a row 
     /* flex-direction: column-reverse; reverses the order of the column */
@@ -63,14 +76,14 @@ FLEX ITEMS*/
     /* flex-wrap specifies whether items are forced into a 
     single line OR can be wrapped into multiple lines */
     /* flex-wrap: nowrap  /*default */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /*flex-wrap: wrap-reverse /*reverses the start/end of cross axis*/;
 
     /* justify-content : defines how space is distributed between itmes 
     in a flex container along the main axis */
-    justify-content: flex-end; /*doesnt change the order - but shifts everything to the end (right) */
+    /* justify-content: flex-end; doesnt change the order - but shifts everything to the end (right) */
     /*justify-content: center; /*centers items within the container*/
     /*justify-content: space-between; /*distributes space evenly between items*/
-    /*justify-content: space-around; /*distributes space evenly around items*/
-}
+    /*justify-content: space-around; /*distributes space evenly around items
+} */
 
