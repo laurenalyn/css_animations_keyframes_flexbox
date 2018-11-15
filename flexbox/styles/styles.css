@@ -15,6 +15,7 @@
 
 .box-1 {
   background: #e51400;
+  order: 7;
 }
 
 .box-2 {
@@ -24,7 +25,7 @@
 
 .box-3 {
   background: #f0a30a;
-  align-self: flex-start;
+  /* align-self: flex-start; */
 }
 
 .box-4 {
@@ -43,7 +44,8 @@
 
 .box-7 {
   background: #00aba9;
-  align-self: flex-end;
+  order: 8;
+  /* align-self: flex-end; */
 }
 
 .box-8 {
@@ -53,6 +55,7 @@
 
 .box-9 {
   background: #aa00ff;
+  order: -1;
 }
 
 
@@ -65,8 +68,8 @@
   border: 20px solid black;
   /* flex-direction: column; */
   flex-direction: row;
-  height: 200px;
-  align-content: space-between;
+  height: 300px;
+  /* align-content: space-between; */
   align-items: center;
 }
 
