@@ -11,25 +11,27 @@
   box-sizing: border-box;
   /* width: 200px; */
   /* height: 150px; */
-  flex-basis: 250px;
-
+  flex-basis: 200px;
+  flex-grow: 1;
 }
 
 .box-1 {
   background: #e51400;
   /* order: 7; */
+  /* flex-grow: 1; */
 }
 
 .box-2 {
   background: #fa6800;
   /* font-size: 150px; */
-  flex-basis: 100px;
+  /* flex-basis: 100px; */
+  flex-grow: 4;
 }
 
 .box-3 {
   background: #f0a30a;
   /* align-self: flex-start; */
-  flex-basis: 100px;
+  /* flex-basis: 100px; */
 }
 
 .box-4 {
@@ -75,6 +77,7 @@
   /* height: 80vh; */
   /* align-content: space-between; */
   /* align-items: center; */
+
 }
 
 /* flex: is shorthand for flex:grow  flex:shrink   flex:basis */
