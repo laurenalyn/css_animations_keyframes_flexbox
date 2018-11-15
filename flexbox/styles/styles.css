@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
 
 .box{
-  font-size: 100px;
+  font-size: 50px;
   color: white;
   padding: 10px;
   text-align: center;
@@ -10,33 +10,39 @@
   /* box-sizing: content-box; */
   box-sizing: border-box;
   /* width: 200px; */
-  /* height: 150px; */
-  flex-basis: 200px;
+  height: 150px;
+  flex-basis: 250px;
   flex-grow: 1;
+  /* flex-shrink: 1; */
 }
+
+/* flex: is shorthand for flex:grow  flex:shrink   flex:basis */
 
 .box-1 {
   background: #e51400;
   /* order: 7; */
   /* flex-grow: 1; */
+  flex-shrink: 2;
 }
 
 .box-2 {
   background: #fa6800;
   /* font-size: 150px; */
   /* flex-basis: 100px; */
-  flex-grow: 4;
+  flex-shrink:0;
 }
 
 .box-3 {
   background: #f0a30a;
   /* align-self: flex-start; */
   /* flex-basis: 100px; */
+  flex-shrink: 2;
 }
 
 .box-4 {
   background: #e3c800;
   /* font-size: 50px; */
+  
 }
 
 .box-5 {
@@ -80,7 +86,6 @@
 
 }
 
-/* flex: is shorthand for flex:grow  flex:shrink   flex:basis */
 
 
 /*.container {
