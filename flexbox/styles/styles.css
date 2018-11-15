@@ -11,32 +11,33 @@
   box-sizing: border-box;
   /* width: 200px; */
   height: 150px;
-  flex-basis: 250px;
-  flex-grow: 1;
+  /* flex-basis: 250px;
+  flex-grow: 1; */
   /* flex-shrink: 1; */
+  flex: 1 1 200px;
 }
 
-/* flex: is shorthand for flex:grow  flex:shrink   flex:basis */
+/* flex: is shorthand for flex:grow  flex:shrink   flex:basis    --must be in this order!*/
 
 .box-1 {
   background: #e51400;
   /* order: 7; */
   /* flex-grow: 1; */
-  flex-shrink: 2;
+  /* flex-shrink: 2; */
 }
 
 .box-2 {
   background: #fa6800;
   /* font-size: 150px; */
   /* flex-basis: 100px; */
-  flex-shrink:0;
+  flex: 1 1 500px;
 }
 
 .box-3 {
   background: #f0a30a;
   /* align-self: flex-start; */
   /* flex-basis: 100px; */
-  flex-shrink: 2;
+  /* flex-shrink: 2; */
 }
 
 .box-4 {
